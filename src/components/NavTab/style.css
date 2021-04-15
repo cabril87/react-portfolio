@@ -3,8 +3,19 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #cc0000;
-    color: white;
-    font-family: 'Exo 2', sans-serif;
+   
     padding: 1em;
   } 
+  .carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .slider-img {
+height: 800px;
+width: 100%;
+  }

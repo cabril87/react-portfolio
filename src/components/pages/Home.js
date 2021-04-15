@@ -1,10 +1,20 @@
 import React from "react";
 import Hero from "../Hero/index"
+import Card from "../Card/Card"
+import Footer from "../Footer/Footer"
+import Jumbotron from "../Jumbotron/Jumbotron";
+import ParaCard from "../ParaCard/ParaCard";
+
 
 function Home() {
   return (
     <div>
-      <Hero />
+      
+      
+      <Hero>
+      
+        
+      </Hero>
       <h1>Home Page</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
@@ -16,6 +26,10 @@ function Home() {
         consequat. Vestibulum vitae lorem tortor. In elementum ultricies tempus. Interdum et
         malesuada fames ac ante ipsum primis in faucibus.
       </p>
+      
+      <Jumbotron />
+    
+    
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
         varius, blandit rhoncus sem. Morbi lacinia nisi ac dui fermentum, sed luctus urna tincidunt.
@@ -26,7 +40,9 @@ function Home() {
         consequat. Vestibulum vitae lorem tortor. In elementum ultricies tempus. Interdum et
         malesuada fames ac ante ipsum primis in faucibus.
       </p>
-      <Hero />
+
+
+      <Footer />
     </div>
   );
 }
