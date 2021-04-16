@@ -5,6 +5,7 @@ import "./style.css"
 function Jumbotron() {
     return (
         <div class="jumbotron jumbotron-fluid">
+            
             <ParaCard />
             
 

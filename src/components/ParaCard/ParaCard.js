@@ -8,11 +8,7 @@ function ParaCard() {
         width: 250,
         height: 250,
     }
-    const twoStyle = {
-        margin: 'auto',
-        width: 370,
-        height: 340,
-    }
+  
     return (
         <>
 
@@ -29,7 +25,7 @@ function ParaCard() {
 
 
 
-                <p style={{ fontSize: '3.5rem', fontWeight: 'bold', padding: '3rem' }}>
+                <p style={{ fontSize: '2rem', fontWeight: 'bold', padding: '3rem' }}>
                     Javascript</p>
 
             </ParallaxCard>
