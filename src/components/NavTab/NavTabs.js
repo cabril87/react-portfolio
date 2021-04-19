@@ -16,7 +16,7 @@ function NavTabs() {
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div className="container">
-          <a className="navbar-brand" href="/" >Carlos Abril</a>
+          <h3>Carlos Abril</h3>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded={!isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={handleNavCollapse}>
             <span className="navbar-toggler-icon"></span>
           </button>
