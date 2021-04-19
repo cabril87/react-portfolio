@@ -1,0 +1,30 @@
+.sec-info  {
+    font-weight: 300;
+    text-align: center;
+  }
+  .sec-info p {
+    font-weight: 300;
+    text-align: center;
+  }
+  .sec-info h3 {
+    font-weight: 300;
+    text-align: center;
+  }
+  .sec-info i {
+    display: block;
+    margin: 30px;
+    
+  }
+  
+  .big-icon {
+    font-size: 132px;
+  }
+
+  .fa {
+  
+    color: black;
+  }
+ .about {
+   margin-top: 140px;
+ }
+  

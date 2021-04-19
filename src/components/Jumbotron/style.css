@@ -1,8 +1,17 @@
 .jumbotron{
-    height: 500px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  padding: 0px;
+  margin: 50px;
+  /* background-size: cover; */
     background: 
   linear-gradient(
     rgba(127, 127, 136, 0.25), 
-    rgba(24, 26, 26, 0.45)
+    rgba(17, 124, 138, 0.45)
   )
+}
+.box {
+  margin:20px;
+  padding: 5px;
+  width: 200px
 }

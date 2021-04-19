@@ -7,4 +7,22 @@
     background-size:cover;
     background-attachment: fixed;
   }
+  .main-heading {
+    font-family: 'Open sans', sans-serif;
+    text-shadow: 5px 5px black;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 400px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    padding: 0;
+    margin: auto;
+    height: 40px;
+    color: #fff;
+  }
 

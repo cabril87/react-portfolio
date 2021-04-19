@@ -1,40 +1,41 @@
 import React from 'react'
+import "./index.css"
 
 function Footer() {
     return (
 
-        <footer class="bg-dark text-center text-white">
+        <footer className="bg-dark text-center text-white footer">
 
-            <div class="container p-4 pb-0">
+            {/* <div className="container "> */}
 
-                <section class="mb-4">
+                {/* <section className=""> */}
 
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                    ><i class="fa fa-facebook-f"></i
+                    {/* <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i className="fa fa-facebook-f"></i
                     ></a>
 
 
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                    ><i class="fa fa-twitter"></i
+                    <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i className="fa fa-twitter"></i
                     ></a>
 
 
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                    ><i class="fa fa-google"></i
+                    <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i className="fa fa-google"></i
+                    ></a> */}
+
+
+
+                    <a className="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/carlos-abril-380140189/" role="button"
+                    ><i className="fa fa-linkedin"></i></a>
+
+
+                    <a className="btn btn-outline-light btn-floating m-1" href="https://github.com/cabril87" role="button"
+                    ><i className="fa fa-github"></i
                     ></a>
+                {/* </section> */}
 
-
-
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                    ><i class="fa fa-linkedin"></i></a>
-
-
-                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-                    ><i class="fa fa-github"></i
-                    ></a>
-                </section>
-
-            </div>
+            {/* </div> */}
 
 
 
