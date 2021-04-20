@@ -45,7 +45,7 @@ const Carousel = () => {
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
           </ol>
           <div className="carousel-inner" id="slider" role="listbox">
-            <img className="carousel-item active" src={currentSlide.source} alt={currentSlide.title} title={currentSlide.title} className="slider-img" />
+            <img className="carousel-item active" src={currentSlide.source} alt={currentSlide.title} title={currentSlide.title}  />
             <div src={currentSlide.source} className="carousel-item active"
 
             >

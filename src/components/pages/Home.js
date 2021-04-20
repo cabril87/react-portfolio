@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "../Hero/index"
+
 import Carousel from "../Carousel/Carousel"
 
 // import ParticleImage from "../ParticleImage/ParticleImageOne"

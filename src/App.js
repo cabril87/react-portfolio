@@ -11,13 +11,15 @@ import Contact from "./components/pages/Contact";
 function App() {
   return (
     <Router>
-      
+      <div>
+
         <NavTabs />
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/blog" component={Blog} />
         <Footer />
+      </div>
       
     </Router>
   );
