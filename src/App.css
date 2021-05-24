@@ -1,0 +1,7 @@
+main {
+    margin-left: 5rem;
+    padding: 1rem;
+}
+main:hover {
+    margin-left: 15rem;
+}
