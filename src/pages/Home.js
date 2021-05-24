@@ -6,16 +6,14 @@ import "./index.css"
 
 
 
-
-function Home() {
+const Home = () => {
   return (
-   <>
-   <Header />
-   
-  <Stack />
-  <Projects/>
- 
-   </>
+    <>
+      <Header />
+      <Stack />
+      <Projects />
+
+    </>
   );
 }
 

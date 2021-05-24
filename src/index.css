@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-size: 16px;
   font-family: 'Open Sans';
@@ -27,6 +31,26 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: indigo;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.orange {
+}
+
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #b80650;
+  transform-origin: left;
+}
+
+
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #066bb8;
+  transform-origin: right;
+}

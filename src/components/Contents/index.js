@@ -60,4 +60,20 @@ export default {
     ],
     desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only`,
   },
+  card: {
+    img: [
+      process.env.PUBLIC_URL + '/assets/mongo.png',
+      process.env.PUBLIC_URL + '/assets/covidicon.png',
+      process.env.PUBLIC_URL + '/assets/covidicon.png',
+      process.env.PUBLIC_URL + '/assets/covidicon.png',
+
+    ]
+  }
+    
+  
+  
+,
+  bg: {
+    img: process.env.PUBLIC_URL + '/assets/FL.svg'
+  }
 };
