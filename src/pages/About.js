@@ -7,10 +7,11 @@ import image from "../components/Images/me.JPG"
 function About() {
   return (
     <section>
-     <div class="flex flex-wrap h-screen">
-      <div class="bg-white md:w-1/2 h-screen">
+     <div class="flex flex-wrap min-h-screen">
+      <div class="bg-white md:w-1/2 min-h-screen">
         <div class="mx-32">
-          <h1 class="text-8xl font-bold mt-16">Hi, im Carlos .<span class="text-4xl font-bold mt-16"> Nice to meet you</span>  </h1>
+          <h1 class="text-8xl font-bold mt-16">Hi, im Carlos.</h1>
+          <span class="text-4xl font-bold mt-16"> Nice to meet you</span>
 
          
           {/* <div class="flex mt-16 font-light text-gray-500">
@@ -29,7 +30,7 @@ function About() {
           <div
             class="description w-full sm: md:w-3/3 mt-16 text-gray-500 text-sm"
           >
-             My journey and passion in web developement started early 2021, in the mist of a global pandemic. Theres something great about 
+             My journey and passion in web developement started early 2021, in the mist of a global pandemic. Theres something great about.. 
           </div>
 
           <button class="uppercase mt-5 text-sm font-semibold hover:underline">
@@ -37,12 +38,14 @@ function About() {
           </button>
         </div>
       </div>
-      <div class="bg-red-600  md:w-1/2 ">
+      <div class="bg-red-600  md:w-1/2 min-h-screen">
         <img
           src={image}
           alt=""
+          className="sm:min-h-screen"
         />
       </div>
+      
     </div>
 </section>
 
