@@ -62,10 +62,10 @@ export default {
   },
   card: {
     img: [
-      process.env.PUBLIC_URL + '/assets/mongo.png',
+      process.env.PUBLIC_URL + '/assets/readicon.png',
+      process.env.PUBLIC_URL + '/assets/todoicon.png',
       process.env.PUBLIC_URL + '/assets/covidicon.png',
-      process.env.PUBLIC_URL + '/assets/covidicon.png',
-      process.env.PUBLIC_URL + '/assets/covidicon.png',
+      process.env.PUBLIC_URL + '/assets/fiticon.png',
 
     ]
   }

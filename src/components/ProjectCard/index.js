@@ -21,31 +21,12 @@ display: flex;
 flex-direction: column;
 border-radius: 25px;
 box-shadow: 0 2px 7px 1px rgba(31, 31, 31, 0.2);
-background-color: #1d1f21;
+background-color: rgb(7, 7, 7);;
 color: #fff;
 position: relative;
 cursor: grab;
 `;
 
-const CircleWrapper = styled.div`
-position: absolute;
-top: 0;
-left: 0;
-min-width: 100%;
-min-height: 100%;
-overflow: hidden;
-border-top-right-radius: 25px;
-`
-const Circle = styled.div`
-position: absolute;
-width: 350px;
-height: 350px;
-top: -4.2em;
-right: -10em;
-z-index: 5;
-background-color:indigo;
-border-radius: 50%;
-`
 const TopContainer = styled.div`
 width: 100%;
 display: flex;
@@ -108,10 +89,8 @@ const ProjectCard = (props) => {
                 dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
                 whileTap={{ cursor: "grabbing" }}
             >
-                <TopContainer>
-                    <CircleWrapper>
-                        <Circle style={{backgroundColor: props.color}}/>
-                    </CircleWrapper>
+                <TopContainer style={{backgroundColor: props.color}}>
+                   
                     <PictureWrapper>
                         <Picture
                             style={{ x, y, rotateX, rotateY, zIndex: 100}}
@@ -138,7 +117,10 @@ const ProjectCard = (props) => {
                     </ProjectText>
                 </TopContainer>
                 <BottomContainer>
-                    <ProjectDetails />
+                    <ProjectDetails projectLink={props.projectLink }>
+                        
+                    </ProjectDetails>
+                       
                 </BottomContainer>
             </CardContainer>
         </CardWrapper>

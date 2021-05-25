@@ -3,6 +3,7 @@ import Stack from '../components/Stack/index'
 import Header from '../components/Header/Header'
 import Projects from '../components/Projects/index'
 import "./index.css"
+import Contact from "../components/Contact/index";
 
 
 
@@ -12,7 +13,7 @@ const Home = () => {
       <Header />
       <Stack />
       <Projects />
-
+      <Contact />
     </>
   );
 }

@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+
 
 const DetailsContainer = styled.div`
 width: 100%;
@@ -59,13 +61,17 @@ border-radius: 8px;
 // }
 // `
 
-const ProjectDetails = () => {
+const ProjectDetails = (props) => {
     return (
        <DetailsContainer>
            <SmallText>Fill in here</SmallText>
            <SpacedHorizontalContainer>
                <MediumText>Fill in text here</MediumText>
-               <ProjectButton>Link</ProjectButton>
+               <Link to={{ pathname: props.projectLink }} target="_blank" >
+               <ProjectButton >
+
+                   Link</ProjectButton>
+               </Link>
            </SpacedHorizontalContainer>
        </DetailsContainer>
     )
