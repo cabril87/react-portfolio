@@ -10,7 +10,7 @@ const Blog = () => {
     <div 
     className="min-h-screen flex items-center justify-center bg"
     style={{
-      backgroundImage: "../components/Images/FL.svg",
+     
       backgroundSize: "cover",
       alignContent: "center",
       backgroundPosition: "0px center ",
@@ -18,13 +18,14 @@ const Blog = () => {
   }}
     >
     
-    <h1
+    <h1 className="flex w-full items-center justify-center mx-auto"
     style={{
       fontWeight: 800,
       color: "white",
-      fontSize: "76px",
+      
 
     }}
+   
     >
       Coming Soon</h1>
       

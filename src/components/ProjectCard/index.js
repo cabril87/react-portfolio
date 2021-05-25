@@ -83,7 +83,7 @@ const ProjectCard = (props) => {
         <CardWrapper>
 
             <CardContainer
-                style={{ x, y, rotateX, rotateY, z: 100 }}
+                style={{ x, y, rotateX, rotateY, zIndex: 10 }}
                 drag
                 dragElastic={0.16}
                 dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
@@ -93,7 +93,7 @@ const ProjectCard = (props) => {
                    
                     <PictureWrapper>
                         <Picture
-                            style={{ x, y, rotateX, rotateY, zIndex: 100}}
+                            style={{ x, y, rotateX, rotateY, zIndex: 10}}
                             drag
                             dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
                             dragElastic={0.12}
@@ -114,12 +114,18 @@ const ProjectCard = (props) => {
                         dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
                         whileTap={{ cursor: "grabbing" }}
                     >
-                        {props.projectTitle}
+                        {props.projectTitle} 
                     </ProjectText>
                 </TopContainer>
-                <BottomContainer>
-                    <ProjectDetails projectLink={props.projectLink }>
-                        
+                <BottomContainer >
+                    <ProjectDetails  
+                    smallText={props.smallText} 
+                    bigText={props.bigText}
+                    projectLink={props.projectLink } 
+                    
+                    >
+                   
+                   
                     </ProjectDetails>
                        
                 </BottomContainer>

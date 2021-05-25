@@ -64,13 +64,13 @@ border-radius: 8px;
 const ProjectDetails = (props) => {
     return (
        <DetailsContainer>
-           <SmallText>Fill in here</SmallText>
            <SpacedHorizontalContainer>
-               <MediumText>Fill in text here</MediumText>
+               <MediumText>{props.bigText}</MediumText>
+           <SmallText>{props.smallText}</SmallText>
                <Link to={{ pathname: props.projectLink }} target="_blank" >
                <ProjectButton >
 
-                   Link</ProjectButton>
+                   Go</ProjectButton>
                </Link>
            </SpacedHorizontalContainer>
        </DetailsContainer>

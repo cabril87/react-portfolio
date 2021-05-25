@@ -13,33 +13,33 @@ const Projects = () => {
                 zIndex: '0'
             }}
         >
-            <h1 className="flex w-full items-center justify-center mx-auto text-5xl font-dosis font-bold mb-10" style={{color: "white"}}>Projects</h1>
+            <h1 className="flex w-full items-center justify-center mx-auto text-5xl font-dosis font-bold mb-10 my-8" style={{color: "white"}}>Projects</h1>
             <div className="inline-flex mx-auto flex-wrap flex-col md:flex-row-reverse md:w-10/12 md:justify-between">
 
                 <div className="flex-1 ... my-4">
                     
                     <ProjectCard  projectTitle="EYE READ" color="black" img={Contents.card.img[0]}  style={{
-                        width: "160px"}} projectLink={"https://www.google.com"}
+                        width: "160px"}} projectLink={"https://mysterious-beach-37448.herokuapp.com/"} smallText={"A reading app that lets you store books read and get insight on future reads!"} 
                     
                     />
 
                 </div>
                 <div className="flex-1 ... my-4">
                     <ProjectCard projectTitle="TO DO" color="black" img={Contents.card.img[1]} style={{
-                        width: "160px"
-                    }}/>
+                        width: "160px"}} projectLink={"https://todo-react-2.herokuapp.com/"} smallText={"What does this day bring you? Plan your day with this to-do app!"} 
+                        />
 
                 </div>
                 <div className="flex-1 ... my-4">
                     <ProjectCard projectTitle="CC CONSOLE" color="black" img={Contents.card.img[2]} style={{
-                        width: "160px"
-                    }}/>
+                        width: "160px"}} projectLink={"https://smoyamendez.github.io/covid-correlation-console/"} smallText={"Get the latest covid statistics geographically!"} 
+                        />
 
                 </div>
                 <div className="flex-1 ... my-4">
                     <ProjectCard projectTitle="FIT TRACKER" color="black"  img={Contents.card.img[3]} style={{
-                        width: "160px" 
-                    }}/>
+                        width: "160px" }} projectLink={"https://polar-brushlands-19024.herokuapp.com/"} smallText={"Plan your work day and save your workout with this fitness app!"} 
+                        />
 
                 </div>
 
