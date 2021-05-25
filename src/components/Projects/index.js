@@ -14,7 +14,7 @@ const Projects = () => {
             }}
         >
             <h1 className="flex w-full items-center justify-center mx-auto text-5xl font-dosis font-bold mb-10 my-8" style={{color: "white"}}>Projects</h1>
-            <div className="inline-flex mx-auto flex-wrap flex-col md:flex-row-reverse md:w-10/12 md:justify-between">
+            <div className="inline-flex mx-auto flex-wrap flex-col md:flex-row-reverse md:w-8/12 p-5 m-2">
 
                 <div className="flex-1 ... my-4">
                     
