@@ -95,6 +95,7 @@ const ProjectCard = (props) => {
                         <Picture
                             style={{ x, y, rotateX, rotateY, zIndex: 100}}
                             drag
+                            dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
                             dragElastic={0.12}
                             whileTap={{ cursor: "grabbing" }}
                         >
