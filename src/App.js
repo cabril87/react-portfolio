@@ -5,6 +5,7 @@ import { AnimatePresence } from "framer-motion"
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
+import ScrollToTop from "./components/ScrollToTop/index"
 
 
 import './App.css'
@@ -15,6 +16,7 @@ const location = useLocation();
   return (
     <>
         <NavTabs />
+        <ScrollToTop />
      <AnimatePresence exitBeforeEnter>
         <Switch loaction={location} key={location.pathname}>
         <Route exact path="/" component={Home} />
