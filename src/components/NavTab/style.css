@@ -117,22 +117,27 @@ span{
 @media only screen and (max-width: 600px) {
   .navbar {
     display: flex;
+    overflow: hidden;
+    position: fixed;
     flex-direction: row;
     bottom: 0;
     width: 100vw;
     height: 5rem;
   }
   
-  /* .top-react-icons{
-    font-size: 2rem;
+  .top-react-icons{
+    font-size: 1rem;
+    color: rgb(120, 86, 245);
     
-    
-  } */
+  }
   .navbar:hover .link-text {
     display: none;
+    
   }
   .navbar-nav {
     list-style: none;
+    display: flex;
+    
     width: 100%;
     padding: 0;
     margin: 0;
@@ -160,15 +165,26 @@ span{
   width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
   .navbar {
     top: 0;
     width: 5rem;
-    height: 100vh;
+    height: 100%;
+    
   }
 
   .navbar:hover {
     width: 16rem;
+  }
+  .top-react-icons{
+    font-size: 1.5rem;
+    color: rgb(120, 86, 245);
+    
+  }
+  .top-react-icons:hover{
+    font-size: 1rem;
+    color: rgb(120, 86, 245);
+    
   }
 
   .navbar:hover .link-text {
@@ -205,4 +221,59 @@ span{
   --text-secondary: #35535c;
   --bg-primary: #fdf6e3;
   --bg-secondary: #f5e5b8;
+}
+@media only screen and (max-device-height: 400px) {
+  .navbar {
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    flex-direction: row;
+    top: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+  .top-react-icons{
+    font-size: 1rem;
+    color: rgb(120, 86, 245);
+    
+  }
+  .top-react-icons:hover{
+    font-size: 1rem;
+    color: rgb(120, 86, 245);
+    
+  }
+  .navbar:hover .link-text {
+    display: none;
+    
+  }
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    
+    width: 100%;
+    padding: 0;
+    margin: 0;
+   
+    }
+  
+  .logo {
+    display: none;
+  }
+
+.navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+  
+
+  nav {
+    margin: 0;
+  }
+  .navbar:hover {
+    width: 100%;
+  
+  }
 }

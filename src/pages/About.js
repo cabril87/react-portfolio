@@ -100,6 +100,10 @@ align-items: center;
   flex-direction: column;
   background-size: cover;
 }
+@media  (max-height: 375px) {
+  margin-left: 2.5rem;
+   
+  }
 `
 ;
 
