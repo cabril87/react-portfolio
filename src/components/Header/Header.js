@@ -2,7 +2,7 @@ import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import content from '../Contents'
 import Typical from 'react-typical'
-import useStartAnimation from '../hook/useStartAnimation';
+import useStartAnimation from '../../hook/useStartAnimation';
 import { Link as ScrollLink } from 'react-scroll';
 import './style.css'
 
