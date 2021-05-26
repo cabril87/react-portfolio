@@ -16,7 +16,7 @@ const Header = () => {
     return (
         
         <div
-            className="min-h-screen flex items-center justify-center "
+            className="min-h-screen flex items-center justify-center mywork"
             style={{
                 background: 'black',
                 zIndex: '0'
@@ -51,7 +51,7 @@ const Header = () => {
                             wrapper="p"
                         />
                     </h1>
-                    <ScrollLink to="mywork" smooth={true}>
+                    <ScrollLink to="../.mywork" smooth={true}>
                         <button
                             className={` animate-bounce bg-indigo-500 px-10 py-3 text-lg uppercase text-white rounded-lg mt-10 hover:bg-indigo-300 transform  ${animated ? 'translate-y-0' : styleTranslate
                                 } ${transition(3500)}`}

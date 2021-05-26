@@ -38,15 +38,20 @@ display: flex;
 flex-direction: column;
 align-items: center;
 height: 100%;
+
+
 }
 .nav-item {
   width: 100%;
+  
 }
 
 .nav-item:nth-last-child(2) {
   margin-top: auto;
   
+  
 }
+
 span{
 
   color: var(--text-primary);
@@ -58,9 +63,11 @@ span{
   text-decoration: none;
   filter: grayscale(100%) opacity(0.7);
   transition: var(--transition-speed);
+  
 }
 .nav-link:hover{
   filter: grayscale(0%) opacity(1);
+  
 }
 
 .link-text {
@@ -76,6 +83,7 @@ span{
 .nav-link svg {
   min-width: 2rem;
   margin: 0 1.5rem
+  
 }
 
 .navbar:hover {
@@ -141,16 +149,18 @@ span{
     width: 100%;
     padding: 0;
     margin: 0;
+    flex-direction: row;
+    margin-right: 80px;
    
     }
-  
+    
   .logo {
     display: none;
   }
-
-.navbar-nav {
-    flex-direction: row;
+  .nav-item{
+    width: 75px;
   }
+
 
   .nav-link {
     justify-content: center;
@@ -182,7 +192,7 @@ span{
     
   }
   .top-react-icons:hover{
-    font-size: 1rem;
+    font-size: 3rem;
     color: rgb(120, 86, 245);
     
   }
@@ -202,7 +212,7 @@ span{
   }
 }
 
-.dark {
+/* .dark {
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
@@ -221,7 +231,7 @@ span{
   --text-secondary: #35535c;
   --bg-primary: #fdf6e3;
   --bg-secondary: #f5e5b8;
-}
+} */
 @media only screen and (max-device-height: 400px) {
   .navbar {
     display: flex;
