@@ -19,30 +19,30 @@ const Projects = () => {
                 <div className="flex-1 ... my-4">
                     
                     <ProjectCard  projectTitle="EYE READ" color="black" img={Contents.card.img[0]}  style={{
-                        width: "160px"}} projectLink={"https://mysterious-beach-37448.herokuapp.com/"} smallText={"A reading app that lets you store books read and get insight on future reads!"} 
+                        width: "160px"}} projectLink={"https://mysterious-beach-37448.herokuapp.com/"} smallText={"A reading app that lets you store books read and get insight on future reads!"} projectCode={"https://github.com/cabril87/Project-2-Eye-Read"}
                     
                     />
 
                 </div>
                 <div className="flex-1 ... my-4">
                     <ProjectCard projectTitle="TO DO" color="black" img={Contents.card.img[1]} style={{
-                        width: "160px"}} projectLink={"https://todo-react-2.herokuapp.com/"} smallText={"What does this day bring you? Plan your day with this to-do app!"} 
+                        width: "160px"}} projectLink={"https://todo-react-2.herokuapp.com/"} smallText={"What does this day bring you? Plan your day with this to-do app!"} projectCode={"https://github.com/cabril87/todo-react"}
                         />
 
                 </div>
                 <div className="flex-1 ... my-4">
                     <ProjectCard projectTitle="CC CONSOLE" color="black" img={Contents.card.img[2]} style={{
-                        width: "160px"}} projectLink={"https://smoyamendez.github.io/covid-correlation-console/"} smallText={"Get the latest covid statistics geographically!"} 
+                        width: "160px"}} projectLink={"https://smoyamendez.github.io/covid-correlation-console/"} smallText={"Get the latest covid statistics geographically!"} projectCode={"https://github.com/cabril87/covid-correlation-console"}
                         />
 
                 </div>
                 <div className="flex-1 ... my-4">
                     <ProjectCard projectTitle="FIT TRACKER" color="black"  img={Contents.card.img[3]} style={{
-                        width: "160px" }} projectLink={"https://polar-brushlands-19024.herokuapp.com/"} smallText={"Plan your work day and save your workout with this fitness app!"} 
+                        width: "160px" }} projectLink={"https://polar-brushlands-19024.herokuapp.com/"} smallText={"Plan your work day and save your workout with this fitness app!"} projectCode={"https://github.com/cabril87/Workout-Tracker-17"}
                         />
 
                 </div>
-
+                <p className="flex w-full items-center justify-center mx-auto text-3xl font-dosis font-bold mb-10 my-8" style={{color: "white"}}></p>
             </div>
 
 

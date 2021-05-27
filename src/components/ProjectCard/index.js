@@ -15,8 +15,8 @@ justify-content: center;
 `;
 
 const CardContainer = styled(motion.div)`
-width: 225px;
-height: 350px;
+width: 250px;
+height: 375px;
 display: flex;
 flex-direction: column;
 border-radius: 25px;
@@ -122,7 +122,7 @@ const ProjectCard = (props) => {
                     smallText={props.smallText} 
                     bigText={props.bigText}
                     projectLink={props.projectLink } 
-                    
+                    projectCode={props.projectCode}
                     >
                    
                    

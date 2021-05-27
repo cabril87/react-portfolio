@@ -28,10 +28,11 @@ width: 100%;
 display: flex;
 justify-content: space-between;
 align-items: center;
+margin-bottom: 20px
 `
 const ProjectButton = styled.div`
 padding: 10px 16px;
-background-color: indigo;
+
 text-transform: uppercase;
 font-size: 16px;
 font-weight: 700;
@@ -43,7 +44,7 @@ border-radius: 8px;
 
 &:hover {
     background-color: transparent;
-    border: 3px solid indigo;
+    padding: 12px 18px;
     color: #fff;
 }
 `
@@ -67,11 +68,19 @@ const ProjectDetails = (props) => {
            <SpacedHorizontalContainer>
                <MediumText>{props.bigText}</MediumText>
            <SmallText>{props.smallText}</SmallText>
+           </SpacedHorizontalContainer>
+           <SpacedHorizontalContainer>
                <Link to={{ pathname: props.projectLink }} target="_blank" >
-               <ProjectButton >
+               <ProjectButton style={{ backgroundColor:"rgb(120, 86, 245)"}}>
 
-                   Go</ProjectButton>
+                   Demo</ProjectButton>
                </Link>
+               <Link to={{ pathname: props.projectCode }} target="_blank" >
+               <ProjectButton style={{ backgroundColor: "darkturquoise" }}>
+
+                   Code</ProjectButton>
+               </Link>
+
            </SpacedHorizontalContainer>
        </DetailsContainer>
     )
