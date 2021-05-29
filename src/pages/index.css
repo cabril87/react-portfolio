@@ -17,7 +17,9 @@
     background: #066bb8;
     transform-origin: right;
   }
-.bg {
-   background-image: url(../Images/FL.svg) ; 
-}
 
+canvas {
+  height: 700px;
+  
+  width: 700px;
+}

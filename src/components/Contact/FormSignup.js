@@ -23,10 +23,10 @@ const FormSignup = ({ submitForm }) => {
             type='text'
             name='name'
             placeholder='Enter your name'
-            value={values.username}
+            value={values.name}
             onChange={handleChange}
           />
-          {errors.username && <p>{errors.username}</p>}
+          {errors.name && <p>{errors.name}</p>}
         </div>
         <div className='form-inputs'>
           <label className='form-label'>Email</label>
@@ -47,10 +47,10 @@ const FormSignup = ({ submitForm }) => {
             type='text'
             name='subject'
             placeholder='Enter your subject'
-            value={values.password}
+            value={values.subject}
             onChange={handleChange}
           />
-          {errors.password && <p>{errors.password}</p>}
+          {errors.subject && <p>{errors.subject}</p>}
         </div>
         <div className='form-inputs'>
           <label className='form-label'>Message</label>
@@ -59,10 +59,10 @@ const FormSignup = ({ submitForm }) => {
             type='text'
             name='message'
             placeholder='Enter your message'
-            value={values.password2}
+            value={values.message}
             onChange={handleChange}
           />
-          {errors.password2 && <p>{errors.password2}</p>}
+          {errors.message && <p>{errors.message}</p>}
         </div>
         <button className='form-input-btn' type='submit'>
           Contact Me
