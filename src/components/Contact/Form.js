@@ -1,34 +1,55 @@
 import React, { useState } from 'react';
 import FormSignup from './FormSignup';
 import FormSuccess from './FormSuccess';
+import styled from "styled-components"
 import "./Form.css"
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+
+
+
+const Container = styled.div`
+display: flex; 
+flex-direction: row;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 60px
+`
 
 const Form = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+ 
+
+
 
   function submitForm() {
     setIsSubmitted(true);
   }
   return (
-    <>
-      <div className='form-container'>
-        <span className='close-btn'>×</span>
-        <div className='form-content-left flex items-center justify-center flex-col'>
-        <h1 className="text-5xl font-dosis font-bold ">Resume</h1>
-          <LazyLoadImage />
-        </div>
+
+
+    <Container>
+     
+      <div className='form-container  form-content-left container mx-auto display: grid   h-auto  lg:w-48 sm:w-10 ' style={{
+        background: "#eee"
+      }} >
+
+
+      
         {!isSubmitted ? (
           <FormSignup submitForm={submitForm} />
         ) : (
           <FormSuccess />
         )}
-         <div className='form-content-right flex items-center justify-center flex-col'>
-         <h1 className="text-5xl font-dosis font-bold">Email</h1>
-          <LazyLoadImage />
-        </div>
+        
+
+        
+
+
+
       </div>
-    </>
+    </Container>
+
   );
 };
 

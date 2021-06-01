@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
-import { PointerLockControls as PointerLockControlsImpl } from 'three/examples/jsm/controls/PointerLockControls';
-import { useThree, extend } from 'react-three-fiber';
+import { PointerLockControls as PointerLockControlsImpl } from 'three/examples/jsm/controls/PointerLockControls'
+import { useThree, extend } from '@react-three/fiber';
 import { useRef } from 'react';
 
 extend({ PointerLockControlsImpl });
@@ -13,6 +13,7 @@ export const FPVControls = (props) => {
   useEffect(() => {
     document.addEventListener('click', () => {
       controls.current.lock();
+      
     });
   }, []);
 

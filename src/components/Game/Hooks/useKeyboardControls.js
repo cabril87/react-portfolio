@@ -3,10 +3,15 @@ import { useState, useEffect } from 'react'
 
 const actionByKey = (key) => {
     const keys = {
-        ArrowUp: 'moveForward',
-        ArrowDown: 'moveBackward',
-        ArrowLeft: 'moveLeft',
-        ArrowRight: 'moveRight',
+        // ArrowUp: 'moveForward',
+        // ArrowDown: 'moveBackward',
+        // ArrowLeft: 'moveLeft',
+        // ArrowRight: 'moveRight',
+        // Space: 'jump',
+        KeyW: 'moveForward',
+        KeyS: 'moveBackward',
+        KeyA: 'moveLeft',
+        KeyD: 'moveRight',
         Space: 'jump',
     };
     return keys[key]

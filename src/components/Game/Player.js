@@ -13,43 +13,51 @@ const Player = (props) => {
         moveBackward,
         moveLeft,
         moveRight,
-        Jump,
+        // Jump,
     } = useKeyboardControls()
 
     console.log(moveForward)
 
-    const { camera } = useThree();
+    const { camera} = useThree()
     const [ref, api] = useSphere(() => ({
         mass: 1,
+        position: [0, 105, 0],
         type: "Dynamic",
         ...props
     }))
     const velocity = useRef([0, 0, 0])
     useEffect(() => {
-        api.velocity.subscribe((velo) => velocity.current = velo )
+        api.velocity.subscribe((velo) => velocity.current = velo)
     }, [api.velocity])
 
-    useFrame(() => {
-        camera.position.copy(ref.current.position);
-        const direction = new Vector3();
-        const frontVector = new Vector3(0, 0, (moveBackward ? 1 : 0) - (moveForward ? 1: 0))
-        const sideVector = new Vector3((moveLeft ? 1 : 0) - (moveRight ? 1: 0), 0, 0);
-        direction
-        .subVectors(frontVector, sideVector)
-        .normalize()
-        .multiplyScalar(SPEED)
-        .applyEuler(camera.rotation)
+    
 
-        api.velocity.set(direction.x, velocity.current[1], direction.z)
+    useFrame(() => {
+        ref.current.updateMatrixWorld();
+            camera.position.copy(ref.current.position);
+        
+            const direction = new Vector3();
+            const frontVector = new Vector3(0, 0, (moveBackward ? 1 : 0) -+ (moveForward ? 1 : 0))
+            const sideVector = new Vector3((moveLeft ? 1 : 0) - (moveRight ? 1 : 0), 0, 0);
+            direction
+                .subVectors(frontVector, sideVector)
+                .normalize()
+                .multiplyScalar(SPEED)
+                .applyEuler(camera.rotation)
+    
+            api.velocity.set(direction.x, velocity.current[1], direction.z)
     })
 
 
 
 
 
-    return (
-        <mesh ref={ref}></mesh>
 
+    return (
+        <>
+        
+        
+        </>
     );
 }
 

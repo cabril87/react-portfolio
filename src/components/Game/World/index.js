@@ -1,5 +1,6 @@
 
 import React from 'react'
+
 import Ground from './Ground'
 
 
@@ -13,7 +14,7 @@ const World = () => {
 
            <Ground  position={[0, 0.5, 0]}/> 
        
-            
+    
         </>
     )
 }
